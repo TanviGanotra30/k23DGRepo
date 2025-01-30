@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML_4</title>
+</head>
+<body>
+    <!--Action is used to link this with backend server side(php)-->
+    <!--Method post is used if we have to send sensitive info it will not show anything in the url-->
+    <form action="" method="post">
+        <label for="uname">Enter Name:</label>
+        <input type="text" name="uname" id="uname" size="20" maxlength="10" placeholder="enter name" required>
+        <br>
+        <br>
+        <lable for="pass">Enter password:</lable>
+        <input type="password" name="pass" id="pass" placeholder="pass less than 10 characters" required>
+        <br>
+        <br>
+        <label for="email">Enter Your Email:</label>
+        <input type="email" name="email" id="email" placeholder="Your email" required>
+        <br>
+        <br>
+        <label for="review">Write a review:</label><br>
+        <textarea name="review" id="review" rows="9" cols="40"></textarea>
+        <br>
+        <br>
+        <label for="lang">Choose the language you know:</label>
+        <input type="checkbox" name="lang" id="lang" value="Hindi" checked>Hindi  <!--"checked" is used to by defalut select (phele se he)-->
+        <input type="checkbox" name="lang" id="lang" value="English">English    <!--"value" is used to know what we have choosen to store at the backend-->
+        <input type="checkbox" name="lang" id="lang" value="Spanish">Spanish    <!--if value not used then just id=on-->
+        <input type="checkbox" name="lang" id="lang" value="French">French
+        <br>
+        <br>
+        <label for="program">Choose your current program:</label>
+        <input type="radio" name="program" id="btech" value="btech">
+        <label for="btech">B-Tech</label>                                              <!--did label and input individually cause if we select on btech text then also it should get selected-->
+        <input type="radio" name="program" id="bca" value="bca">
+        <label for="bca">BCA</label>   
+        <input type="radio" name="program" id="Pharmacy" value="Pharmacy">
+        <label for="Pharmacy">Pharmacy</label>
+        <input type="radio" name="program" id="bba" value="BBA">
+        <label for="bba">BBA</label> 
+        <br>
+        <br>
+        <label for="state">Choose your state:</label>
+        <select name="state" id="state" size="3" multiple>            <!--size is used to see the options like 3 at a time and "multiple" is used to select multiple option in dropdown-->
+            <option value="">Select state</option>
+            <option value="punj">Punjab</option>
+            <option value="hp">Himachal Pradesh</option>
+            <option value="jk">J&K</option>
+            <option value="mizo">Mizoram</option>
+            <option value="delhi">Delhi</option>
+        </select>
+        <br>
+        <br>
+        <label for="file1">Choose File</label>
+        <input type="file" name="file1" id="file1" accept="image/*">       <!--"accept" is used to take what kind of file we want to choose-->
+        <br>
+        <br>
+        <input type="reset" name="resetForm" id="resetForm" value="reset form">
+        <input type="submit" name="submitForm" id="submitForm" value="submit form">
+        <input type="image" name="imgbtn" id="imgbtn" src="Images\submit.jpg" width="95" height="40">     <!--image can also act as submit reset or anything-->
+    </form>
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: brown;
+            /* padding: 30px; */
+            text-align: center;
+            align-items: center;
+            border: black solid;
+            /* height: 400px; */
+            min-height: 400px;                              /* min height is used for if the size of items increases it will also change the height of container automaticaly */
+            display: flex;
+            justify-content: flex-start;                /* for horizontal  */
+            align-items:center;                        /* for vertical */
+            flex-direction: row;
+            flex-wrap: wrap;                        /* items goes to the next line in container if the browser size is small */
+            column-gap: 30px;
+            row-gap: 20px;
+        }
+        .item{
+            background-color: red;
+            width: 60px;
+            height: 50px;
+            padding: 20px;
+            align-content: center;
+            border: white 3px solid;
+            color: aliceblue;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            flex-shrink: 0;
+            flex-grow: 1;
+        }
+
+        /* #item1{
+            flex-grow: 5;
+            flex-shrink: 5;
+            align-self: center;
+            margin-right: auto;
+        } */
+
+        @media(max-width:500px){
+            .container{
+                flex-wrap: wrap;
+                background-color: grey;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="item1">Item 1</div>
+        <div class="item" id="item2">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+         <div class="item">Item 6</div>
+        <div class="item">Item 7</div>
+        <div class="item">Item 8</div>
+        <div class="item">Item 9</div>
+         <div class="item">Item 10</div> -->
+    <!-- </div> -->
+<!-- </body>
+</html> --> 
+
+
+<!-- Flex shrink :- by default value is 1 (1 means enable and 0 means disable) -->
+ <!-- Flex grow :- by default value is 0 (1 means enable and 0 means disable ) -->
+
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: bisque;
+            padding:30px;
+            border: 2px maroon solid;
+            display: flex;
+            justify-content: center;/*(space between etc)horizontal aaytt*/
+            align-items:flex-start;/*vertical aaytt*/
+            /* height:500px; */
+            min-height: 500px;/*items overflow aavula if items are larger than container width*/
+            flex-direction: row;/*kuthane aavm instead of linear*/
+            flex-wrap: nowrap;
+            row-gap: 40px;
+            column-gap:30px;
+            
+            
+            
+            
+        }
+        .item{
+            background-color: lightcoral;
+            width:60px;
+            height:60px;
+            border: 2px purple solid;
+            color:white;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+            padding:10px;
+            /* align-content: center;
+            text-align: center; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-shrink: 0;/*1 means it will shrink when website cheruthaakkmbo..0->no*/
+            flex-grow: 1;/*by deafult value is 0 for flex shrink its 1*/
+        }
+        #i1{
+            /* flex-grow:5; */
+            /* flex-shrink:5;
+            align-self:center; */
+            margin-right:auto;}
+          
+            
+            @media(max-width:500px){
+                .container{
+                    flex-wrap:wrap;
+                    background-color: grey;
+                }
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="item" id="i1">Item 1</div>
+    <div class="item">Item 2</div>
+    <div class="item">Item 3</div>
+    <div class="item">Item 4</div>
+    <div class="item">Item 5</div>
+    <div class="item">Item 6</div>
+    <div class="item">Item 7</div>
+    <div class="item">Item 8</div>
+</div>
+</body>
+</html>

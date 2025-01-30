@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grids</title>
+    <style>
+        .container{
+            border: 10px black solid;
+            background-color: wheat;
+            padding: 20px;
+            display: grid;
+            /* grid-template-columns: 30% auto 50%;                  /*to increase the size of columns*/
+           /* grid-template-rows: 100px 80px 100px;                to increase height of rows */
+            grid-template: 150px 100px/auto 20% 50%;               /*to set for both rows as well as columns*/
+
+            grid-row-gap: 30px;
+            grid-column-gap: 10px;
+        }
+        .item{
+            border:5px yellow solid;
+            padding: 10px;
+            background-color: lightgreen;
+        }
+
+        #i3{
+            /* grid-row-start: 2;
+            grid-row-end: span 2;  
+            
+            span means jitne mein divide krna hai uss ek row ko jaise item 3 ko 2 rows deni hai uske samne*/
+
+            grid-row: 2/span 2;
+        }
+        #i7{
+            grid-column: 4/span 2;
+        }
+
+        #i9{
+            /*all the properties of grid row start end and grid column start and end*/
+
+            /*3=row start 3=column start span 1=row end span 2=column end*/
+            grid-area: 3/3/span 1/span 2;
+        }
+    </style>
+</head>
+<body>
+
+    <!--dipslay:grid is most important property-->
+    
+    <div class="container">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item" id="i3">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+        <div class="item">Item 6</div>
+        <div class="item" id="i7">Item 7</div>
+        <div class="item">Item 8</div>
+        <div class="item" id="i9">Item 9</div>
+    </div>
+
+</body>
+</html>

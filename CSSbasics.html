@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS basics</title>
+    <style>
+    /* Type selector*/
+        h3{
+            color: aqua;
+            background-color: black;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-style: italic;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        /* Attribute selector*/
+        a[href="HTML_Forms.html"]{
+            background-color: yellow;
+        }
+        
+        /* Id selector*/
+        #para1{
+            background-color: cadetblue;
+        }
+
+        /* class selector*/
+        .c1{
+            background-color: burlywood;
+        }
+
+        /* universal selector*/
+        *{
+            text-align: center;
+            font-weight: bold;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        /* pseudo selector*/
+        h3:hover{
+            text-align: right;
+            background-color: brown;
+        }
+
+        /* combinator selector*/
+        .parass p{
+            color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <h1>FrontEnd class INT219 COURSE CODE</h1>                <!--Tpes of Selectors-->
+    <h2>Learning CSS and JavaSrcipt</h2>                      <!--1.Type selector  2.Attribute Selector 3.id selector 4.class selector 5.universal selector 6.pseudo selector 7.combinator selector-->
+    <h3>Learning CSS and JavaSrcipt</h3>                       
+    <h4 class="c1">Learning CSS and JavaSrcipt</h4>            <!--multiple elements cannot have same id but can have same class-->
+    <h5 class="c1">Learning CSS and JavaSrcipt</h5>
+    <h6 class="c1">Learning CSS and JavaSrcipt</h6>
+
+    <a href="HTML_Forms.html" target="_blank">HTML forms</a>
+    <a href="HTML_Lists.html">HTML lists</a>
+
+    <p id="para1">para 1</p>
+    <p id="para2">para 2</p>
+    <div class="parass"><p>Para 3</p></div>
+    <p>para 4</p>
+</body>
+</html>
